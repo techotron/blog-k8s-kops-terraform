@@ -8,13 +8,13 @@ resource "aws_security_group" "k8s_common_http" {
     from_port   = 80
     protocol    = "tcp"
     to_port     = 80
-    cidr_blocks = ["${local.ingress_ips}"]
+    cidr_blocks = local.ingress_ips
   }
 
   ingress {
     from_port   = 443
     protocol    = "tcp"
     to_port     = 443
-    cidr_blocks = ["${local.ingress_ips}"]
+    cidr_blocks = local.ingress_ips
   }
 }

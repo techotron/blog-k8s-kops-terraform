@@ -9,6 +9,12 @@ Deploy a Kubernetes cluster using Terraformed AWS resources and kops. Used for t
 * kubectl
 * terraform
 
+If you're using MacOS you can use brew:
+
+```bash
+brew install kops kubectl terraform jq
+```
+
 ## Usage
 
 Edit `terraform/main.tf` with your local variables (details in the blog post above)
